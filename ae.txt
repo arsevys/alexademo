@@ -1,0 +1,151 @@
+{
+  "session": {
+    "sessionId": "SessionId.38ed8b0b-764d-42f3-a93b-36d5f374d6f1",
+    "application": {
+      "applicationId": "amzn1.ask.skill.3131a749-5fe3-4cf1-95c4-c7e0a735db48"
+    },
+    "attributes": {},
+    "user": {
+      "userId": "amzn1.ask.account.AF6WQJYA4PCW5INVLA7NKG5WFYYCMAA3SJDCOQUV4G6OROHMAFRTIBG466T7FIVL6WEGIREWZBIBLRH2Y6SSC5SIYR7HIHIWHM5ZCAQI5D7FJUB32TGYAJSF5JIWRRCLKLBUELXI5HEYS5PTCKUBX4JFYEPYMWL2CX2BZSV5VHQMEWK2NGCB424E6VP4QUYKIRIHLBS7MQNFSLI"
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.00e2d745-fae4-4484-a284-69f61c72d76f",
+    "locale": "en-US",
+    "timestamp": "2017-05-30T22:47:18Z",
+    "intent": {
+      "name": "new",
+      "slots": {}
+    }
+  },
+  "version": "1.0"
+}
+
+
+
+
+
+
+
+
+
+
+formato audio
+
+
+{
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak>Yo moma's so stupid, she climbed over a glass wall to see what was on the other side.<audio src='http://www.mediafire.com/file/t4y4ta1peeo4e9r/i.mp3'/></speak>"
+    },
+    "card": {
+      "content": "Yo moma's so stupid, she climbed over a glass wall to see what was on the other side.",
+      "title": "Joke for category: stupid",
+      "type": "Simple"
+    },
+    "shouldEndSession": true
+  },
+  "sessionAttributes": {}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "version": "1.0",
+  "session": {
+    "new": true,
+    "sessionId": "amzn1.echo-api.session.c9d7e361-5c28-4a9a-87c7-7e9290dad927",
+    "application": {
+      "applicationId": "amzn1.ask.skill.4bf01237-becf-401b-89b8-9113140f99fa"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.AGYUIOKS6HDP7O2F56MZTCUAIHQFHVQ7FYOMHAATVW5BFQI7FECLNWFKNTSTJ5YUWRF2UNWSLMC7IP6TIJ45DY4QPBTJNDUSVNIPXWDJ4FHU7IUE46SJEYN5Y4LUXI7CLJ6UXMDTGNFVFR3HQQGQFZVO3COOPHUACXX7FKR7AUO6XYPWDUZKUF3GIJ7UYZQU25CW4TRHSOMWFWY"
+    }
+  },
+  "context": {
+    "AudioPlayer": {
+      "playerActivity": "IDLE"
+    },
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.4bf01237-becf-401b-89b8-9113140f99fa"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AGYUIOKS6HDP7O2F56MZTCUAIHQFHVQ7FYOMHAATVW5BFQI7FECLNWFKNTSTJ5YUWRF2UNWSLMC7IP6TIJ45DY4QPBTJNDUSVNIPXWDJ4FHU7IUE46SJEYN5Y4LUXI7CLJ6UXMDTGNFVFR3HQQGQFZVO3COOPHUACXX7FKR7AUO6XYPWDUZKUF3GIJ7UYZQU25CW4TRHSOMWFWY"
+      },
+      "device": {
+        "deviceId": "amzn1.ask.device.AH5JCU4ZFPT3RJKZB7RILZYFCVQPWU7ANVXFQCT25HILC53WV2DPVZ7KCRKXH6VVDK3RF3THPBA7SGB5WWWCTMH2RORBYFND5LR4626WFPEU26EMUFTYJYPTWL5NNLKR2LRGSE5PZQO7VRGEBHQQ6EZ6TGPQ",
+        "supportedInterfaces": {
+          "AudioPlayer": {}
+        }
+      },
+      "apiEndpoint": "https://api.amazonalexa.com"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "amzn1.echo-api.request.c917aefc-4145-43b3-9909-dba1c9637ae1",
+    "timestamp": "2017-05-31T21:04:13Z",
+    "locale": "en-US",
+    "intent": {
+      "name": "JokeIntent",
+      "confirmationStatus": "NONE",
+      "slots": {
+        "Item": {
+          "name": "Item",
+          "value": "stupid",
+          "confirmationStatus": "NONE"
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

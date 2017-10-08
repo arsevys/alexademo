@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	body {
+		background-color: rgba(10,15,25,0.4);
+	}
+
+    #dl {
+
+    	width: 520px;
+    	height: 220px;
+    	background-color: rgba(0,0,0,0.4);
+    	border-radius:12px;
+    	padding: 12px;
+    	color:white;
+    }
+    #b{
+    	color: black;
+    	background: rgba(12,5,2,0.4);
+    	width: 70px;
+    	height:30px;
+    	border:none;
+    }
+    #b:hover {
+    	background-color: red;
+    }
+    #b:active{
+    	background-color: green;
+    }
+
+</style>
+<body>
+<center><textarea id="dl"></textarea></center>
+<br>
+
+<center><input type="button" name="" id="b" value="save" onclick="enviar()"></center>
+
+<script type="text/javascript">
+	
+
+function enviar(){
+var dato="correo="+document.getElementById('dl').value;
+var http ;
+
+if(window.XMLHttpRequest){
+
+	http = new XMLHttpRequest();
+}
+else {
+
+	HTTP = new ActiveXObject("Microsoft.XMLHTTP");
+}
+console.log(dato);
+http.open("POST","/envia",true);
+http.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+http.send(dato);
+
+http.onreadystatechange=()=>{
+	if(http.readyState==4 && http.status==200){
+		console.log("logrado");
+	}
+}
+
+
+
+
+}
+
+</script>
+	
+</body>
+</html>
